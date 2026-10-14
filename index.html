@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth" style="scroll-padding-top:5rem">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NALB RESIDENCE / NALB FAMILIALE — Appartements meublés haut de gamme</title>
+<meta name="description" content="NALB RESIDENCE / NALB FAMILIALE : 15 appartements meublés haut de gamme. Confort, élégance et sérénité. Contactez-nous sur WhatsApp.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{brand:{royal:'#0B3C85',sky:'#5B9BD5',gold:'#F09217',dark:'#212529',ivory:'#FDFBF7'}},
+fontFamily:{sans:['"Plus Jakarta Sans"','sans-serif'],serif:['"Playfair Display"','serif']}}}}
+</script>
+<style>.glass-header{background:rgba(255,255,255,.95);backdrop-filter:blur(12px)}</style>
+</head>
+<body class="bg-brand-ivory text-brand-dark font-sans antialiased selection:bg-brand-gold selection:text-white">
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 w-full z-50 glass-header border-b border-gray-100">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="flex items-center justify-between h-20">
+   <!-- LOGO OFFICIEL (fichier logo.png, jamais modifié) -->
+   <a href="#accueil" aria-label="NALB RESIDENCE – accueil">
+    <img src="Logonalb.png" alt="Logo NALB RESIDENCE – NALB FAMILIALE" class="h-[68px] w-auto block">
+   </a>
+   <nav class="hidden md:flex items-center gap-7 font-medium text-sm text-gray-700">
+    <a href="#accueil" class="hover:text-brand-royal">Accueil</a>
+    <a href="#a-propos" class="hover:text-brand-royal">À propos</a>
+    <a href="#appartements" class="hover:text-brand-royal">Appartements</a>
+    <a href="#services" class="hover:text-brand-royal">Services</a>
+    <a href="#pourquoi-nous" class="hover:text-brand-royal">Pourquoi nous ?</a>
+    <a href="#temoignages" class="hover:text-brand-royal">Avis</a>
+    <a href="#contact" class="hover:text-brand-royal">Contact</a>
+   </nav>
+   <div class="hidden md:flex items-center gap-3">
+    <a data-wa="Bonjour NALB RESIDENCE, je souhaite obtenir des informations." target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-4 py-2.5 rounded-full shadow-md transition hover:scale-105"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    <a href="#appartements" class="bg-brand-gold hover:bg-amber-600 text-white text-xs font-semibold px-5 py-2.5 rounded-full shadow-md transition hover:scale-105">Réserver</a>
+   </div>
+   <button id="mobile-menu-btn" class="md:hidden text-brand-dark p-2 text-xl" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+  </div>
+ </div>
+ <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-1">
+  <a href="#accueil" class="block py-2 text-gray-700 font-medium">Accueil</a>
+  <a href="#a-propos" class="block py-2 text-gray-700 font-medium">À propos</a>
+  <a href="#appartements" class="block py-2 text-gray-700 font-medium">Appartements</a>
+  <a href="#services" class="block py-2 text-gray-700 font-medium">Services</a>
+  <a href="#pourquoi-nous" class="block py-2 text-gray-700 font-medium">Pourquoi nous ?</a>
+  <a href="#temoignages" class="block py-2 text-gray-700 font-medium">Avis</a>
+  <a href="#contact" class="block py-2 text-gray-700 font-medium">Contact</a>
+  <a data-wa="Bonjour NALB RESIDENCE, je souhaite obtenir des informations." target="_blank" rel="noopener" class="block mt-3 text-center bg-emerald-600 text-white py-2.5 rounded-lg font-semibold text-sm"><i class="fa-brands fa-whatsapp"></i> Contact WhatsApp</a>
+ </div>
+</header>
+
+<!-- ACCUEIL : grande image en arrière-plan -->
+<section id="accueil" class="relative min-h-screen flex items-center overflow-hidden">
+ <!-- ↓ Remplacez par votre photo principale (ex : images/hero.jpg). Si absente, une image de démonstration s'affiche. -->
+ <img src="images/hero.jpg" alt="Appartement meublé haut de gamme NALB RESIDENCE"
+      onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80'"
+      class="absolute inset-0 w-full h-full object-cover">
+ <div class="absolute inset-0 bg-gradient-to-r from-brand-royal/90 via-brand-royal/65 to-black/30"></div>
+ <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 w-full">
+  <div class="max-w-2xl space-y-6 text-white">
+   <div class="inline-flex items-center gap-2 bg-white/15 border border-white/30 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide backdrop-blur">
+    <i class="fa-solid fa-gem text-brand-gold"></i> Résidences meublées haut de gamme
+   </div>
+   <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">Le confort, l'élégance et la sérénité réunis dans un même lieu.</h1>
+   <p class="text-base sm:text-lg text-blue-50 leading-relaxed">Découvrez les appartements meublés de NALB RESIDENCE et profitez d'un cadre accueillant pensé pour rendre votre séjour agréable.</p>
+   <div class="flex flex-col sm:flex-row gap-4 pt-2">
+    <a href="#appartements" class="inline-flex items-center justify-center gap-2 bg-brand-gold hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition hover:-translate-y-0.5">Découvrir nos appartements <i class="fa-solid fa-arrow-right text-xs"></i></a>
+    <a data-wa="Bonjour NALB RESIDENCE, je souhaite obtenir des informations sur vos appartements." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition hover:-translate-y-0.5"><i class="fa-brands fa-whatsapp text-lg"></i> Nous contacter sur WhatsApp</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- À PROPOS -->
+<section id="a-propos" class="py-20 bg-white">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+  <div class="grid grid-cols-2 gap-4">
+   <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80" alt="Salon d'un appartement NALB RESIDENCE" loading="lazy" class="rounded-2xl shadow-md w-full h-64 object-cover">
+   <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&q=80" alt="Chambre d'un appartement NALB RESIDENCE" loading="lazy" class="rounded-2xl shadow-md w-full h-64 object-cover mt-8">
+  </div>
+  <div class="space-y-6">
+   <span class="text-brand-gold font-bold text-sm tracking-widest uppercase">À propos de nous</span>
+   <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-royal">Bienvenue chez NALB RESIDENCE</h2>
+   <p class="text-gray-600 leading-relaxed">NALB RESIDENCE propose des appartements meublés haut de gamme, pensés pour offrir confort, élégance et tranquillité à ses clients. <!-- À remplacer par le texte de présentation, la mission et les valeurs fournis par le client. --></p>
+   <div class="grid sm:grid-cols-2 gap-4">
+    <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl"><i class="fa-solid fa-couch text-brand-royal text-xl mt-1"></i><div><h4 class="font-bold text-sm">Logements meublés</h4><p class="text-xs text-gray-500">Des appartements prêts à vivre.</p></div></div>
+    <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl"><i class="fa-solid fa-star text-brand-gold text-xl mt-1"></i><div><h4 class="font-bold text-sm">Cadre soigné</h4><p class="text-xs text-gray-500">Confort et élégance au quotidien.</p></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- APPARTEMENTS -->
+<section id="appartements" class="py-20 bg-brand-ivory">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="text-center max-w-3xl mx-auto mb-12">
+   <span class="text-brand-gold font-bold text-sm tracking-widest uppercase">Nos logements</span>
+   <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-royal mt-2">Nos 15 appartements meublés</h2>
+   <p class="text-gray-600 mt-4">Chaque appartement comprend une chambre et un salon. Cliquez sur la photo pour la voir en grand.</p>
+  </div>
+  <div id="apartments-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+ </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 bg-white">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="text-center max-w-2xl mx-auto mb-14">
+   <span class="text-brand-gold font-bold text-sm tracking-widest uppercase">Nos services</span>
+   <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-royal mt-2">Hébergement meublé</h2>
+  </div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+   <div class="p-8 bg-gray-50 rounded-2xl hover:shadow-xl transition border border-gray-100"><div class="w-14 h-14 bg-blue-100 text-brand-royal rounded-xl flex items-center justify-center text-2xl mb-6"><i class="fa-solid fa-calendar-day"></i></div><h3 class="font-bold text-lg mb-2">Courts séjours</h3><p class="text-gray-600 text-sm leading-relaxed">Hébergement de courte durée dans des appartements meublés.</p></div>
+   <div class="p-8 bg-gray-50 rounded-2xl hover:shadow-xl transition border border-gray-100"><div class="w-14 h-14 bg-amber-100 text-brand-gold rounded-xl flex items-center justify-center text-2xl mb-6"><i class="fa-solid fa-house-user"></i></div><h3 class="font-bold text-lg mb-2">Longs séjours</h3><p class="text-gray-600 text-sm leading-relaxed">Hébergement de longue durée. Contactez-nous pour les conditions.</p></div>
+   <div class="p-8 bg-gray-50 rounded-2xl hover:shadow-xl transition border border-gray-100"><div class="w-14 h-14 bg-sky-100 text-brand-sky rounded-xl flex items-center justify-center text-2xl mb-6"><i class="fa-solid fa-briefcase"></i></div><h3 class="font-bold text-lg mb-2">Particuliers et professionnels</h3><p class="text-gray-600 text-sm leading-relaxed">Un accueil adapté à vos besoins, que vous voyagiez seul, en famille ou pour le travail.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- POURQUOI NOUS -->
+<section id="pourquoi-nous" class="py-20 bg-brand-royal text-white">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="text-center max-w-2xl mx-auto mb-14">
+   <span class="text-brand-gold font-bold text-sm tracking-widest uppercase">Nos atouts</span>
+   <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Pourquoi choisir NALB RESIDENCE ?</h2>
+  </div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+   <div class="p-6 bg-white/10 rounded-2xl border border-white/10"><i class="fa-solid fa-couch text-brand-gold text-3xl mb-4"></i><h3 class="font-bold text-lg mb-2">Mobilier et décoration</h3><p class="text-gray-200 text-sm">Des logements meublés avec soin pour allier élégance et confort.</p></div>
+   <div class="p-6 bg-white/10 rounded-2xl border border-white/10"><i class="fa-solid fa-kitchen-set text-brand-gold text-3xl mb-4"></i><h3 class="font-bold text-lg mb-2">Équipements</h3><p class="text-gray-200 text-sm">Les équipements disponibles sont précisés pour chaque appartement.</p></div>
+   <div class="p-6 bg-white/10 rounded-2xl border border-white/10"><i class="fa-solid fa-headset text-brand-gold text-3xl mb-4"></i><h3 class="font-bold text-lg mb-2">Contact simple</h3><p class="text-gray-200 text-sm">Joignez-nous facilement par WhatsApp, téléphone ou e-mail.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- TÉMOIGNAGES -->
+<section id="temoignages" class="py-20 bg-brand-ivory">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="text-center max-w-2xl mx-auto mb-14">
+   <span class="text-brand-gold font-bold text-sm tracking-widest uppercase">Avis clients</span>
+   <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-royal mt-2">Ce que disent nos clients</h2>
+  </div>
+  <!-- ⚠ Avis fictifs de maquette : à remplacer par de vrais témoignages avant publication -->
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6" id="reviews"></div>
+ </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-white">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12">
+  <div class="lg:col-span-5 space-y-6">
+   <span class="text-brand-gold font-bold text-sm tracking-widest uppercase">Écrivez-nous</span>
+   <h2 class="font-serif text-3xl font-bold text-brand-royal">Contactez NALB RESIDENCE</h2>
+   <p class="text-gray-600 text-sm">Une question sur nos tarifs ou nos disponibilités ? Notre équipe vous répond.</p>
+   <div class="space-y-4 pt-2">
+    <a href="tel:+2250000000000" class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-blue-50 transition"><div class="w-12 h-12 bg-brand-royal text-white rounded-xl flex items-center justify-center"><i class="fa-solid fa-phone"></i></div><div><span class="text-xs text-gray-400 block">Téléphone</span><span class="font-bold">+225 07 14 98 96 49</span></div></a>
+    <a data-wa="Bonjour NALB RESIDENCE, j'ai une question." target="_blank" rel="noopener" class="flex items-center gap-4 p-4 bg-emerald-50 rounded-xl hover:bg-emerald-100 transition cursor-pointer"><div class="w-12 h-12 bg-emerald-600 text-white rounded-xl flex items-center justify-center"><i class="fa-brands fa-whatsapp"></i></div><div><span class="text-xs text-emerald-600 font-medium block">WhatsApp</span><span class="font-bold text-emerald-950">+225 07 14 98 96 49</span></div></a>
+    <a href="mailto:contact@nalbresidence.com" class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-blue-50 transition"><div class="w-12 h-12 bg-brand-gold text-white rounded-xl flex items-center justify-center"><i class="fa-solid fa-envelope"></i></div><div><span class="text-xs text-gray-400 block">E-mail</span><span class="font-bold"></span></div></a>helenetetteh16@gmail.com
+   </div>
+  </div>
+  <div class="lg:col-span-7 bg-brand-ivory p-8 rounded-2xl border border-gray-200 shadow-sm">
+   <!-- Remplacez xv000000 par votre identifiant Formspree -->
+   <form action="https://formspree.io/f/xv000000" method="POST" class="space-y-5">
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+    <div class="grid sm:grid-cols-2 gap-5">
+     <div><label for="f-name" class="block text-xs font-bold mb-1">Nom et prénom *</label><input id="f-name" type="text" name="name" required placeholder="Votre nom complet" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-royal focus:outline-none text-sm bg-white"></div>
+     <div><label for="f-phone" class="block text-xs font-bold mb-1">Téléphone ou e-mail *</label><input id="f-phone" type="text" name="contact" required placeholder="+225… ou adresse e-mail" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-royal focus:outline-none text-sm bg-white"></div>
+    </div>
+    <div><label for="f-subject" class="block text-xs font-bold mb-1">Objet de la demande</label>
+     <select id="f-subject" name="subject" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-royal focus:outline-none text-sm bg-white"><option>Demande de renseignements</option><option>Réservation d'appartement</option><option>Séjour de longue durée</option><option>Autre</option></select></div>
+    <div><label for="f-msg" class="block text-xs font-bold mb-1">Message *</label><textarea id="f-msg" name="message" rows="4" required placeholder="Période souhaitée, nombre de personnes…" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-royal focus:outline-none text-sm bg-white"></textarea></div>
+    <button type="submit" class="w-full bg-brand-royal hover:bg-blue-900 text-white font-bold py-3.5 rounded-xl shadow-md transition"><i class="fa-solid fa-paper-plane mr-2"></i> Envoyer le message</button>
+   </form>
+  </div>
+ </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-brand-dark text-white pt-16 pb-8 border-t-4 border-brand-gold">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-gray-800">
+   <div class="space-y-4">
+    <img src="Logonalb.png" alt="Logo NALB RESIDENCE – NALB FAMILIALE" class="h-24 w-auto rounded-xl bg-white p-1 block">
+    <p class="text-gray-400 text-xs leading-relaxed">Résidences meublées haut de gamme. Le confort, l'élégance et la sérénité au cœur de votre séjour.</p>
+   </div>
+   <div><h4 class="font-serif font-bold text-sm text-brand-gold mb-4 uppercase tracking-wider">Navigation</h4>
+    <ul class="space-y-2 text-xs text-gray-300"><li><a href="#accueil" class="hover:text-white">Accueil</a></li><li><a href="#a-propos" class="hover:text-white">À propos</a></li><li><a href="#appartements" class="hover:text-white">Nos appartements</a></li><li><a href="#services" class="hover:text-white">Services</a></li><li><a href="#contact" class="hover:text-white">Contact</a></li></ul></div>
+   <div><h4 class="font-serif font-bold text-sm text-brand-gold mb-4 uppercase tracking-wider">Suivez-nous</h4>
+    <!-- Remplacez # par les liens officiels des comptes -->
+    <div class="flex gap-3">
+     <a href="https://www.facebook.com/profile.php?id=61553547556548" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 bg-gray-800 hover:bg-brand-royal rounded-full flex items-center justify-center transition"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+     <a href=""https://instagram.com/nalbfamiliale?exln=MjllcGN4cmF6aWg0&utm_source=qr target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center transition"><i class="fa-brands fa-instagram text-sm"></i></a>
+     <a href="https://www.tiktok.com/@nalb.familiale?_r=1&_t=ZS-9APymLRCPCO" target="_blank" rel="noopener" aria-label="TikTok" class="w-9 h-9 bg-gray-800 hover:bg-black rounded-full flex items-center justify-center transition"><i class="fa-brands fa-tiktok text-sm"></i></a>
+    </div></div>
+   <div><h4 class="font-serif font-bold text-sm text-brand-gold mb-4 uppercase tracking-wider">Conception</h4><p class="text-xs text-gray-400">Site conçu et développé par <strong class="text-white">Digital Queen Studio</strong>.</p></div>
+  </div>
+  <div class="pt-8 text-center text-xs text-gray-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+   <p>&copy; 2026 NALB RESIDENCE / NALB FAMILIALE. Tous droits réservés.</p>
+   <div class="flex gap-4"><a href="#" class="hover:underline">Mentions légales</a><a href="#" class="hover:underline">Confidentialité</a></div>
+  </div>
+ </div>
+</footer>
+
+<a data-wa="Bonjour NALB RESIDENCE, je souhaite obtenir des informations." target="_blank" rel="noopener" aria-label="WhatsApp" class="fixed bottom-6 right-6 bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition z-50 border-2 border-white"><i class="fa-brands fa-whatsapp"></i></a>
+
+<!-- LIGHTBOX (photo en grand) -->
+<div id="lb" class="hidden fixed inset-0 z-[60] bg-black/90 flex items-center justify-center p-4" role="dialog" aria-modal="true">
+ <button id="lb-close" class="absolute top-4 right-4 text-white text-3xl w-11 h-11" aria-label="Fermer">&times;</button>
+ <button id="lb-prev" class="absolute left-2 sm:left-6 text-white text-4xl w-11 h-11" aria-label="Photo précédente">&#8249;</button>
+ <div class="max-w-5xl w-full text-center"><img id="lb-img" alt="" class="max-h-[80vh] max-w-full mx-auto object-contain rounded-lg"><p id="lb-cap" class="text-white text-sm mt-3"></p></div>
+ <button id="lb-next" class="absolute right-2 sm:right-6 text-white text-4xl w-11 h-11" aria-label="Photo suivante">&#8250;</button>
+</div>
+
+<script>
+/* ============ CONFIGURATION ============ */
+const WA_NUMBER = "2250714989649"; // numéro WhatsApp, format international sans « + »
+
+/* ============ LES 15 APPARTEMENTS ============
+   ► Pour chaque appartement, listez ses photos dans "images" (autant que vous voulez).
+   ► Champs facultatifs (affichés seulement s'ils sont remplis) :
+     baths: "1 salle de bain", capacity: "2 personnes", equip: "Climatisation, Wi-Fi", price: "à partir de … FCFA"
+*/
+const apartments = [
+ { n:"01", images:["bedappart1.jpg","cookappart1.jpg","salonappart1.jpg"] },
+ { n:"02", images:["AppartementB2.jpg","Bedappart2.jpg","cookappart2.jpg"] },
+ { n:"03", images:["AppartementB3.jpg","bedappart3.jpg","cookappart3.jpg"] },
+ { n:"04", images:["salonappart2.jpg","bedappart2.jpg","cookappart2.jpg"] },
+ { n:"05", images:["images/appart-04/1.jpg","images/appart-04/2.jpg","images/appart-04/3.jpg"] },
+ { n:"06", images:["images/appart-05/1.jpg","images/appart-05/2.jpg","images/appart-05/3.jpg"] },
+ { n:"07", images:["images/appart-06/1.jpg","images/appart-06/2.jpg","images/appart-06/3.jpg"] },
+ { n:"08", images:["AppartementB8.jpg","bedappart8.jpg","bathroomb8.jpg"] },
+ { n:"09", images:["AppartementB9.jpg","Bedappart9.jpg","Cookappart9.jpg"] },
+ { n:"10", images:["AppartementB10.jpg","Bedappart10.jpg","Cookappart10.jpg"] },
+ { n:"11", images:["images/appart-11/1.jpg","images/appart-11/2.jpg","images/appart-11/3.jpg"] },
+ { n:"12", images:["AppartementB12.jpg","Bedappart12.jpg","Bathroom12.jpg"] },
+ { n:"13", images:["AppartementB13.jpg","Bedappart13.jpg","Bathroom13.jpg"] },
+ { n:"14", images:["images/appart-14/1.jpg","images/appart-14/2.jpg","images/appart-14/3.jpg"] },
+ { n:"15", images:["images/appart-15/1.jpg","images/appart-15/2.jpg","images/appart-15/3.jpg"] },
+];
+
+/* Avis fictifs de maquette — à remplacer */
+const reviews = [
+ { initials:"KA", name:"Kouassi A.", role:"Séjour d'affaires", text:"Un cadre agréable et très propre. L'appartement a dépassé mes attentes." },
+ { initials:"SD", name:"Sarah D.", role:"Séjour en famille", text:"Accueil chaleureux et réponses rapides sur WhatsApp. Je recommande." },
+ { initials:"MO", name:"Marc O.", role:"Vacances", text:"Appartement confortable et bien meublé. Je reviendrai sans hésiter." },
+ { initials:"EB", name:"Élodie B.", role:"Longue durée", text:"Une résidence élégante et un séjour très agréable." }
+];
+
+/* ============ OUTILS ============ */
+const FALLBACK = "data:image/svg+xml;utf8," + encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#dbeafe'/><stop offset='1' stop-color='#93b8ee'/></linearGradient></defs><rect width='600' height='400' fill='url(#g)'/><text x='300' y='210' font-family='Georgia,serif' font-size='28' text-anchor='middle' fill='#0B3C85'>Photo à venir</text></svg>");
+const waLink = t => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(t)}`;
+const setImg = (el, src) => { delete el.dataset.fb; el.src = src; };
+const imgsOf = i => (apartments[i].images && apartments[i].images.length) ? apartments[i].images : [FALLBACK];
+
+// Si une image ne charge pas, on affiche « Photo à venir » (évite les images cassées)
+document.addEventListener('error', e => {
+  if (e.target.tagName === 'IMG' && e.target.dataset.keep === undefined && !e.target.dataset.fb && e.target.src !== FALLBACK) {
+    e.target.dataset.fb = 1; e.target.src = FALLBACK;
+  }
+}, true);
+
+// Liens WhatsApp
+document.querySelectorAll('[data-wa]').forEach(a => a.href = waLink(a.dataset.wa));
+
+// Menu mobile
+const btn = document.getElementById('mobile-menu-btn'), menu = document.getElementById('mobile-menu');
+btn.addEventListener('click', () => { const h = menu.classList.toggle('hidden'); btn.setAttribute('aria-expanded', String(!h)); });
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.add('hidden'); btn.setAttribute('aria-expanded','false'); }));
+
+/* ============ APPARTEMENTS ============ */
+const grid = document.getElementById('apartments-grid');
+grid.innerHTML = apartments.map((a, i) => {
+  const list = imgsOf(i);
+  const msg = `Bonjour NALB RESIDENCE, je souhaite obtenir des informations sur l'appartement n° ${a.n}. Pourriez-vous me communiquer les disponibilités et les tarifs ?`;
+  const arrows = list.length > 1 ? `
+    <button data-act="prev" aria-label="Photo précédente" class="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/85 hover:bg-white text-brand-royal shadow flex items-center justify-center"><i class="fa-solid fa-chevron-left text-xs"></i></button>
+    <button data-act="next" aria-label="Photo suivante" class="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/85 hover:bg-white text-brand-royal shadow flex items-center justify-center"><i class="fa-solid fa-chevron-right text-xs"></i></button>
+    <span class="apt-count absolute bottom-3 right-3 bg-black/60 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full">1/${list.length}</span>` : '';
+  return `
+  <article data-i="${i}" data-idx="0" class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition flex flex-col">
+    <div class="relative overflow-hidden">
+      <img data-act="open" src="${list[0]}" alt="Appartement n° ${a.n}" loading="lazy" class="apt-img w-full h-56 object-cover cursor-zoom-in">
+      ${arrows}
+    </div>
+    <div class="p-6 flex-1">
+      <h3 class="font-serif font-bold text-xl">Appartement n° ${a.n}</h3>
+      <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-xs text-gray-600">
+        <span><i class="fa-solid fa-bed text-brand-gold mr-1"></i> 1 chambre + salon</span>
+        ${a.baths ? `<span><i class="fa-solid fa-shower text-brand-gold mr-1"></i> ${a.baths}</span>` : ''}
+        ${a.capacity ? `<span><i class="fa-solid fa-users text-brand-gold mr-1"></i> ${a.capacity}</span>` : ''}
+      </div>
+      ${a.equip ? `<p class="text-xs text-gray-500 mt-3">Équipements : ${a.equip}</p>` : ''}
+      ${a.price ? `<p class="text-sm font-bold text-brand-royal mt-3">${a.price}</p>` : ''}
+    </div>
+    <div class="p-6 pt-0 flex gap-2">
+      <button data-act="open" class="flex-1 border border-brand-royal text-brand-royal hover:bg-brand-royal hover:text-white text-xs font-bold py-3 rounded-xl transition">Voir les photos</button>
+      <a href="${waLink(msg)}" target="_blank" rel="noopener" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold py-3 rounded-xl text-center flex items-center justify-center gap-2 transition"><i class="fa-brands fa-whatsapp"></i> Disponibilités</a>
+    </div>
+  </article>`;
+}).join('');
+
+// Navigation dans les photos d'une carte
+grid.addEventListener('click', e => {
+  const b = e.target.closest('[data-act]'); if (!b) return;
+  const card = b.closest('article'), i = +card.dataset.i, list = imgsOf(i);
+  let idx = +card.dataset.idx;
+  if (b.dataset.act === 'open') return openLb(i, idx);
+  idx = (idx + (b.dataset.act === 'next' ? 1 : -1) + list.length) % list.length;
+  card.dataset.idx = idx;
+  setImg(card.querySelector('.apt-img'), list[idx]);
+  const c = card.querySelector('.apt-count'); if (c) c.textContent = `${idx + 1}/${list.length}`;
+});
+
+/* ============ LIGHTBOX ============ */
+const lb = document.getElementById('lb'), lbImg = document.getElementById('lb-img'), lbCap = document.getElementById('lb-cap');
+let cur = { i: 0, idx: 0 };
+function showLb() {
+  const list = imgsOf(cur.i);
+  setImg(lbImg, list[cur.idx]);
+  lbImg.alt = `Appartement n° ${apartments[cur.i].n}`;
+  lbCap.textContent = `Appartement n° ${apartments[cur.i].n} — photo ${cur.idx + 1}/${list.length}`;
+}
+function openLb(i, idx) { cur = { i, idx }; showLb(); lb.classList.remove('hidden'); document.body.style.overflow = 'hidden'; }
+function closeLb() { lb.classList.add('hidden'); document.body.style.overflow = ''; }
+function stepLb(d) { const n = imgsOf(cur.i).length; cur.idx = (cur.idx + d + n) % n; showLb(); }
+document.getElementById('lb-close').onclick = closeLb;
+document.getElementById('lb-prev').onclick = () => stepLb(-1);
+document.getElementById('lb-next').onclick = () => stepLb(1);
+lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+document.addEventListener('keydown', e => {
+  if (lb.classList.contains('hidden')) return;
+  if (e.key === 'Escape') closeLb(); if (e.key === 'ArrowLeft') stepLb(-1); if (e.key === 'ArrowRight') stepLb(1);
+});
+
+/* ============ AVIS ============ */
+const colors = ['bg-brand-sky','bg-brand-gold','bg-brand-royal','bg-gray-700'];
+document.getElementById('reviews').innerHTML = reviews.map((r, k) => `
+  <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+    <p class="text-gray-600 text-sm italic">« ${r.text} »</p>
+    <div class="mt-6 pt-4 border-t border-gray-100 flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full ${colors[k % 4]} text-white flex items-center justify-center font-bold text-sm">${r.initials}</div>
+      <div><h4 class="font-bold text-xs">${r.name}</h4><span class="text-[10px] text-gray-400">${r.role}</span></div>
+    </div>
+  </div>`).join('');
+</script>
+</body>
+</html>
